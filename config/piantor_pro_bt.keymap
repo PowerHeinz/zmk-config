@@ -28,9 +28,9 @@
             // | SHFT |  ü  |  ö  |  ä  |  p  |  z  |  b  |  m   |  ,  |  .  |  j  | SHFT |
             //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
             bindings = <
-                &kp TAB   &kp X           &kp V           &kp L           &kp C &kp W &kp K &kp H  &kp G     &kp F   &kp Q &kp DE_SHARP_S
-                &kp LCTRL &kp U           &kp I           &kp A           &kp E &kp O &kp S &kp N  &kp R     &kp T   &kp D &kp Y
-                &kp LSHFT &kp DE_U_UMLAUT &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp P &kp Z &kp B &kp M  &kp COMMA &kp DOT &kp J &kp RSHFT
+                &kp TAB   &kp X           &kp V           &kp L           &kp C &kp W    &kp K &kp H  &kp G     &kp F   &kp Q &kp DE_SHARP_S
+                &kp LCTRL &kp U           &kp I           &kp A           &kp E &kp O    &kp S &kp N  &kp R     &kp T   &kp D &kp DE_Y
+                &kp LSHFT &kp DE_U_UMLAUT &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp P &kp DE_Z &kp B &kp M  &kp COMMA &kp DOT &kp J &kp RSHFT
                                &kp LGUI &kp SPACE &mo 1 &mo 2 &kp RET &kp RALT
             >;
         };
