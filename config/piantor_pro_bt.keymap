@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "keys_de.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -20,16 +21,16 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "NEO2";
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            // |  TAB |  x  |  v  |  l  |  c  |  w  |  k  |  h   |  g  |  f  |  q  |  ß   |
+            // | CTRL |  u  |  i  |  a  |  e  |  o  |  s  |  n   |  r  |  t  |  d  |  y   |
+            // | SHFT |  ü  |  ö  |  ä  |  p  |  z  |  b  |  m   |  ,  |  .  |  j  | SHFT |
             //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
             bindings = <
-                &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                &kp TAB   &kp X           &kp V           &kp L           &kp C &kp W    &kp K &kp H  &kp G     &kp F   &kp Q &kp DE_SHARP_S
+                &kp LCTRL &kp U           &kp I           &kp A           &kp E &kp O    &kp S &kp N  &kp R     &kp T   &kp D &kp DE_Y
+                &kp LSHFT &kp DE_U_UMLAUT &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp P &kp DE_Z &kp B &kp M  &kp COMMA &kp DOT &kp J &kp RSHFT
                                &kp LGUI &kp SPACE &mo 1 &mo 2 &kp RET &kp RALT
             >;
         };
