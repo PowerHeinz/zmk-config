@@ -21,17 +21,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "NEO2";
-            // --------------------------------------------------------------------------------
-            // |  TAB |  x  |  v  |  l  |  c  |  w  |  k  |  h   |  g  |  f  |  q  |  ß   |
-            // | CTRL |  u  |  i  |  a  |  e  |  o  |  s  |  n   |  r  |  t  |  d  |  y   |
-            // | SHFT |  ü  |  ö  |  ä  |  p  |  z  |  b  |  m   |  ,  |  .  |  j  | SHFT |
-            //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
+            display-name = "anymak:END";
+            // -----------------------------------------------------------------------------
+            // | ESC | q     | k | o   | u   | y   |---| v   | d   | c   | l | f     | j   |
+            // | SYM | h     | a | e   | i   | ,   |---| g   | t   | r   | n | s     | SYM |
+            // |     | LSHFT | z | '   | .   | x   |---| b   | p   | m   | w | RSHFT |     |
+            //                   | GUI | SPC | LWR |---| RSE | ENT | ALT |
             bindings = <
-                &kp TAB   &kp X           &kp V           &kp L           &kp C &kp W    &kp K &kp H  &kp G     &kp F   &kp Q &kp DE_SHARP_S
-                &kp LCTRL &kp U           &kp I           &kp A           &kp E &kp O    &kp S &kp N  &kp R     &kp T   &kp D &kp DE_Y
-                &kp LSHFT &kp DE_U_UMLAUT &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp P &kp DE_Z &kp B &kp M  &kp COMMA &kp DOT &kp J &kp RSHFT
-                               &kp LGUI &kp SPACE &mo 1 &mo 2 &kp RET &kp RALT
+                &kp ESC   &kp Q     &kp K   &kp O     &kp U     &kp Y        &kp V     &kp D     &kp C   &kp L   &kp F     &kp J
+                &mo 1     &kp H     &kp A   &kp E     &kp I     &kp COMMA    &kp G     &kp T     &kp R   &kp N   &kp S     &mo 1
+                &none     &kp LSHFT &kp Z   &kp APOS  &kp DOT   &kp X        &kp B     &kp P     &kp M   &kp W   &kp RSHFT &none
+                                       &kp LGUI   &lt 2 SPACE   &mo 2        &mo 3     &lt 2 ENTER   &kp RALT
             >;
         };
 
