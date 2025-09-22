@@ -21,7 +21,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "anymak:END";
+            display-name = "BASE";
             // -----------------------------------------------------------------------------
             // | ESC | q     | k | o   | u   | y   |---| v   | d   | c   | l | f     | j   |
             // | SYM | h     | a | e   | i   | ,   |---| g   | t   | r   | n | s     | SYM |
@@ -31,12 +31,12 @@
                 &kp ESC   &kp Q     &kp K   &kp O     &kp U     &kp Y        &kp V     &kp D     &kp C   &kp L   &kp F     &kp J
                 &mo 1     &kp H     &kp A   &kp E     &kp I     &kp COMMA    &kp G     &kp T     &kp R   &kp N   &kp S     &mo 1
                 &none     &kp LSHFT &kp Z   &kp APOS  &kp DOT   &kp X        &kp B     &kp P     &kp M   &kp W   &kp RSHFT &none
-                                       &kp LGUI   &lt 2 SPACE   &mo 2        &mo 3     &lt 2 ENTER   &kp RALT
+                                       &kp LGUI   &lt 1 SPACE   &mo 2        &mo 3     &lt 1 ENTER   &kp RALT
             >;
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NAVI";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   | LFT | DWN |  UP | RGT |     |      |
@@ -67,7 +67,7 @@
         };
 
         extra_layer_1 {
-            display-name = "EXTRA 1";
+            display-name = "NUMBER";
             bindings = <
                 &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
