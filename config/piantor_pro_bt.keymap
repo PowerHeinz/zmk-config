@@ -25,6 +25,56 @@
             tapping-term-ms = <350>;
             flavor = "tap-preferred";
         };
+
+        HMShiftR: HMShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-key-positions = <0 1 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 2 3 4>;
+            hold-trigger-on-release;
+        };
+
+        HMShiftL: HMShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-key-positions = <0 1 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 2 3 4>;
+            hold-trigger-on-release;
+            flavor = "tap-preferred";
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -40,13 +90,13 @@
             //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
 
             bindings = <
-&none  &kp X  &kp V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &none  &kp U  &kp I  &kp A  &kp E  &kp O  &kp S  &kp N  &kp R  &kp T  &kp D  &kp DE_Y  &none  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &none  &none  &kp SPACE  &mo 2  &mo 3  &kp RET  &none
+&none  &longPress LG(X) X  &longPress LG(V) V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &none  &HMShiftL LEFT_SHIFT U  &HML LEFT_CONTROL I  &HML LEFT_ALT A  &HML LEFT_GUI E  &kp O  &kp S  &HMR RIGHT_GUI N  &HMR RIGHT_ALT R  &HMR RIGHT_CONTROL T  &HMShiftR RIGHT_SHIFT D  &kp DE_Y  &none  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &none  &kp LA(LC(LG(LEFT_SHIFT)))  &kp SPACE  &mo 2  &mo 3  &kp RET  &kp LA(LC(LG(LEFT_SHIFT)))
             >;
         };
 
         Linux {
             bindings = <
-&trans  &trans  &trans  &trans  &longPress LC(C) C  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &longPress LC(X) X  &longPress LC(V) V  &trans  &longPress LC(C) C  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "LINUX";
