@@ -80,7 +80,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        mac_layer {
             display-name = "MAC";
 
             // --------------------------------------------------------------------------------
@@ -90,11 +90,11 @@
             //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
 
             bindings = <
-&kp ESC  &longPress LG(X) X  &longPress LG(V) V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &kp TAB  &HMShiftL LEFT_SHIFT U  &HML LEFT_CONTROL I  &HML LEFT_ALT A  &HML LEFT_GUI E  &kp O  &kp S  &HMR RIGHT_GUI N  &HMR RIGHT_ALT R  &HMR RIGHT_CONTROL T  &HMShiftR RIGHT_SHIFT D  &kp DE_Y  &kp LEFT_SHIFT  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &kp RIGHT_SHIFT  &mo 3  &kp SPACE  &mo 2  &mo 2  &kp RET  &mo 3
+&kp ESC  &longPress LG(X) X  &longPress LG(V) V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &kp TAB  &HMShiftL LEFT_SHIFT U  &HML LEFT_CONTROL I  &HML LEFT_ALT A  &HML LEFT_GUI E  &kp O  &kp S  &HMR RIGHT_GUI N  &HMR RIGHT_ALT R  &HMR RIGHT_CONTROL T  &HMShiftR RIGHT_SHIFT D  &kp DE_Y  &kp LEFT_SHIFT  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &kp RIGHT_SHIFT  &mo 3  &lt 4 SPACE  &mo 2  &mo 2  &kp RET  &mo 3
             >;
         };
 
-        Linux {
+        linux_layer {
             bindings = <
 &trans  &longPress LC(X) X  &longPress LC(V) V  &trans  &longPress LC(C) C  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -102,7 +102,7 @@
             label = "LINUX";
         };
 
-        lower_layer {
+        symbol_layer {
             display-name = "SYMBOLS";
 
             // -----------------------------------------------------------------------------------------
@@ -112,12 +112,12 @@
             //                    | GUI | SPC |       |     | ENT | ALT |
 
             bindings = <
-&trans  &trans  &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_CARET  &kp DE_EXCLAMATION  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_EQUAL  &kp DE_AMPERSAND  &kp BSPC  &trans  &kp DE_BSLH  &kp DE_FSLH  &kp DE_LEFT_BRACE  &kp DE_RIGHT_BRACE  &kp DE_ASTERISK  &kp DE_QUESTION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_MINUS  &kp DE_AT_SIGN  &trans  &trans  &kp DE_HASH  &kp DE_EURO  &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE  &kp DE_PLUS  &kp DE_PERCENT  &kp DE_DOUBLE_QUOTES  &kp DE_SQT  &trans  &trans  &mo 4  &kp SPACE  &trans  &trans  &kp RET  &mo 4
+&trans  &trans  &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_CARET  &kp DE_EXCLAMATION  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_EQUAL  &kp DE_AMPERSAND  &kp BSPC  &trans  &kp DE_BSLH  &kp DE_FSLH  &kp DE_LEFT_BRACE  &kp DE_RIGHT_BRACE  &kp DE_ASTERISK  &kp DE_QUESTION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_MINUS  &kp DE_AT_SIGN  &trans  &trans  &kp DE_HASH  &kp DE_EURO  &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE  &kp DE_PLUS  &kp DE_PERCENT  &kp DE_DOUBLE_QUOTES  &kp DE_SQT  &trans  &trans  &mo 5  &kp SPACE  &trans  &trans  &kp RET  &mo 5
             >;
         };
 
-        raise_layer {
-            display-name = "NAV/NUMB";
+        number_layer {
+            display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -126,11 +126,18 @@
             //                    | GUI | SPC |     |     | ENT | ALT |
 
             bindings = <
-&trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &kp TAB  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DE_ASTERISK  &kp BSPC  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_PLUS  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DE_MINUS  &trans  &trans  &kp SPACE  &mo 4  &mo 4  &kp RET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DE_ASTERISK  &kp BSPC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_PLUS  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DE_MINUS  &trans  &trans  &kp SPACE  &mo 5  &mo 5  &kp RET  &trans
             >;
         };
 
-        hyper_layer {
+        navigation_layer {
+            display-name = "NAV";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &mo 5  &mo 5  &kp RET  &trans
+            >;
+        };
+
+        system_layer {
             display-name = "SYSTEM";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &bt BT_CLR  &trans  &sys_reset  &bootloader  &studio_unlock  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &tog 1  &trans  &kp SPACE  &trans  &trans  &kp RET  &trans
