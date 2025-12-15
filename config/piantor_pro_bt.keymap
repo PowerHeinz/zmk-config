@@ -90,7 +90,7 @@
             //                    | GUI | SPC | LWR | RSE | ENT  | ALT |
 
             bindings = <
-&kp ESC  &longPress LG(X) X  &longPress LG(V) V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &kp TAB  &HMShiftL LEFT_SHIFT U  &HML LEFT_CONTROL I  &HML LEFT_ALT A  &HML LEFT_GUI E  &kp O  &kp S  &HMR RIGHT_GUI N  &HMR RIGHT_ALT R  &HMR RIGHT_CONTROL T  &HMShiftR RIGHT_SHIFT D  &kp DE_Y  &none  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &none  &mo 3  &kp SPACE  &mo 2  &mo 2  &kp RET  &mo 3
+&kp ESC  &longPress LG(X) X  &longPress LG(V) V  &kp L  &longPress LG(C) C  &kp W  &kp K  &kp H  &kp G  &kp F  &kp Q  &kp DE_SHARP_S  &kp TAB  &HMShiftL LEFT_SHIFT U  &HML LEFT_CONTROL I  &HML LEFT_ALT A  &HML LEFT_GUI E  &kp O  &kp S  &HMR RIGHT_GUI N  &HMR RIGHT_ALT R  &HMR RIGHT_CONTROL T  &HMShiftR RIGHT_SHIFT D  &kp DE_Y  &kp LEFT_SHIFT  &kp DE_U_UMLAUT  &kp DE_O_UMLAUT  &kp DE_A_UMLAUT  &kp P  &kp DE_Z  &kp B  &kp M  &kp COMMA  &kp DOT  &kp J  &kp RIGHT_SHIFT  &mo 3  &kp SPACE  &mo 2  &mo 2  &kp RET  &mo 3
             >;
         };
 
@@ -126,7 +126,7 @@
             //                    | GUI | SPC |     |     | ENT | ALT |
 
             bindings = <
-&trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &kp TAB  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &kp BSPC  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_PLUS  &kp DE_STAR  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DE_MINUS  &kp DE_FSLH  &trans  &kp SPACE  &mo 4  &mo 4  &kp RET  &trans
+&trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &kp TAB  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DE_ASTERISK  &kp BSPC  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DE_PLUS  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DE_MINUS  &trans  &trans  &kp SPACE  &mo 4  &mo 4  &kp RET  &trans
             >;
         };
 
