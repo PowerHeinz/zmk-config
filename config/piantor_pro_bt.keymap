@@ -133,7 +133,7 @@
         navigation_layer {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &mo 5  &mo 5  &kp RET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp PAGE_DOWN  &kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &mo 5  &mo 5  &kp BACKSPACE  &trans
             >;
         };
 
